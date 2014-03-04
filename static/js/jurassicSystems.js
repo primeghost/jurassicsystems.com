@@ -99,8 +99,11 @@
 
       if (arg === '') {
          $('#main-input').append($('<span/>').text('access: must specify target system'));
-
+      
+      if (arg === 'Mahattan Project') {
+         $('#main-input').append($('<span/>').text('access: granted       I AM THE GOD OF DEATH'));
          return;
+      
       } else if (inputLine.split(' ').length > 2 && magicWord.trim() === 'please') {
          $('#main-input').append($('<img id="asciiNewman" src="/img/asciiNewman.jpg" />'));
          $('#asciiNewman').load(function() {
